@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Dashboard | The Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="user">
+    <header>
+        <h1>The Archive</h1>
+        <h2>User Dashboard</h2>
+    </header>
+    <!-- Navigation for logged-in user -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="library.html">Library</a>
+        <a href="upload.html">Upload Book</a>
+        <a id="logoutBtn" href="#">Logout</a>
+    </nav>
+    <main>
+        <!-- Welcome message filled by script -->
+        <p id="welcomeUser"></p>
+
+        <h3>My Uploaded Books:</h3>
+        <ul id="myBooksList"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload Book | The Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="upload">
+    <header>
+        <h1>The Archive</h1>
+        <h2>Upload Book</h2>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="library.html">Library</a>
+        <a id="logoutBtn" href="#">Logout</a>
+    </nav>
+    <main>
+        <!-- Book upload form -->
+        <form id="uploadForm">
+            <label for="bookTitle">Title:</label>
+            <input type="text" id="bookTitle" required>
+
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" required>
+
+            <label for="bookCategory">Category (A–Z):</label>
+            <select id="bookCategory" required>
+                <option value="">Select category</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option>
+                <option value="D">D</option><option value="E">E</option><option value="F">F</option>
+                <option value="G">G</option><option value="H">H</option><option value="I">I</option>
+                <option value="J">J</option><option value="K">K</option><option value="L">L</option>
+                <option value="M">M</option><option value="N">N</option><option value="O">O</option>
+                <option value="P">P</option><option value="Q">Q</option><option value="R">R</option>
+                <option value="S">S</option><option value="T">T</option><option value="U">U</option>
+                <option value="V">V</option><option value="W">W</option><option value="X">X</option>
+                <option value="Y">Y</option><option value="Z">Z</option>
+            </select>
+
+            <label for="bookPrice">Price (USD):</label>
+            <input type="number" id="bookPrice" step="0.01" required>
+
+            <label for="bookContentInput">Content:</label>
+            <textarea id="bookContentInput" rows="6" required></textarea>
+
+            <button type="submit">Upload Book</button>
+            <p id="uploadError" class="error"></p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

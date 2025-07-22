@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | The Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="register">
+    <header>
+        <h1>The Archive</h1>
+        <h2>User Registration</h2>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <main>
+        <!-- Registration form -->
+        <form id="registerForm">
+            <label for="registerUsername">Username:</label>
+            <input type="text" id="registerUsername" required>
+
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" required>
+
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+
+            <button type="submit">Register</button>
+            <p id="registerError" class="error"></p>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
